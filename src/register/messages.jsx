@@ -9,7 +9,7 @@ const messages = defineMessages({
   // Field labels
   'registration.fullname.label': {
     id: 'registration.fullname.label',
-    defaultMessage: 'Full name',
+    defaultMessage: 'Full Icecream name',
     description: 'Label that appears above fullname field',
   },
   'registration.email.label': {
