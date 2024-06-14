@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   'register.page.title': {
     id: 'register.page.title',
-    defaultMessage: 'Register | {siteName}',
+    defaultMessage: 'Register Icecream | {siteName}',
     description: 'register page title',
   },
   // Field labels
