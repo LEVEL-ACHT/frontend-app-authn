@@ -29,7 +29,7 @@ import { ResetPasswordPage } from './reset-password';
 
 import './index.scss';
 
-registerIcons();
+// registerIcons();
 
 const MainApp = () => (
   <AppProvider store={configureStore()}>
@@ -38,18 +38,18 @@ const MainApp = () => (
     </Helmet>
     {getConfig().ZENDESK_KEY && <Zendesk />}
     <Routes>
-      <Route path="/" element={<Navigate replace to={updatePathWithQueryParams(REGISTER_PAGE)} />} />
-      <Route
+{/*       <Route path="/" element={<Navigate replace to={updatePathWithQueryParams(REGISTER_PAGE)} />} /> */}
+{/*       <Route
         path={REGISTER_EMBEDDED_PAGE}
         element={<EmbeddedRegistrationRoute><RegistrationPage /></EmbeddedRegistrationRoute>}
-      />
+      /> */}
       <Route
         path={LOGIN_PAGE}
         element={
           <UnAuthOnlyRoute><Logistration selectedPage={LOGIN_PAGE} /></UnAuthOnlyRoute>
         }
       />
-      <Route path={REGISTER_PAGE} element={<UnAuthOnlyRoute><Logistration /></UnAuthOnlyRoute>} />
+{/*       <Route path={REGISTER_PAGE} element={<UnAuthOnlyRoute><Logistration /></UnAuthOnlyRoute>} /> */}
       <Route path={RESET_PAGE} element={<UnAuthOnlyRoute><ForgotPasswordPage /></UnAuthOnlyRoute>} />
       <Route path={PASSWORD_RESET_CONFIRM} element={<ResetPasswordPage />} />
       <Route path={AUTHN_PROGRESSIVE_PROFILING} element={<ProgressiveProfiling />} />
