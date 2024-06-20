@@ -12,9 +12,6 @@ const LargeLayout = () => {
 
   return (
     <div className="w-50 d-flex">
-      <div className="hero-image-section">
-        <Image className="hero-image" alt="Willkommen bei Level8" src="images/login-page-hero-image.png"/>
-      </div>
       <div className="col-md-9 bg-primary-400">
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
           <Image className="logo position-absolute" alt={getConfig().SITE_NAME} src={getConfig().LOGO_WHITE_URL} />
