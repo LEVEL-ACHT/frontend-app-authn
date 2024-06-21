@@ -3,13 +3,13 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   'register.page.title': {
     id: 'register.page.title',
-    defaultMessage: 'Register Icecream | {siteName}',
+    defaultMessage: 'Register | {siteName}',
     description: 'register page title',
   },
   // Field labels
   'registration.fullname.label': {
     id: 'registration.fullname.label',
-    defaultMessage: 'Full Icecream name',
+    defaultMessage: 'Full name',
     description: 'Label that appears above fullname field',
   },
   'registration.email.label': {
